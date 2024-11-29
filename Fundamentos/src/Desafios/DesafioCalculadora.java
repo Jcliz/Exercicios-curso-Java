@@ -24,7 +24,7 @@ public class DesafioCalculadora {
                                 operacao.equals("/") ? num1 / num2 :
                                         operacao.equals("%") ? num1 % num2 : 0;
 
-        System.out.println("Resultado: " + resultado);
+        System.out.printf("\n" + "%.2f %s %.2f = %.2f", num1, operacao, num2, resultado);
         leitor.close();
     }
 }
