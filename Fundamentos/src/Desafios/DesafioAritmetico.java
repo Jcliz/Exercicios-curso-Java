@@ -1,3 +1,5 @@
+package Desafios;
+
 public class DesafioAritmetico {
     public static void main(String[] args) {
         double a = (6 * (3 + 2));
