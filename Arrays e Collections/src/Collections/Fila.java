@@ -1,4 +1,4 @@
-package Collections.fila;
+package Collections;
 
 import java.util.LinkedList;
 import java.util.Queue;
