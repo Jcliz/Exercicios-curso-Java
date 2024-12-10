@@ -9,11 +9,11 @@ public class Main {
 
         for (int i = 0; i < 5; i++) {
             bmwM3.acelerar();
-            porsche911.acelerar();
-        }
+            System.out.println(bmwM3);
 
-        System.out.println(bmwM3);
-        System.out.println(porsche911);
+            porsche911.acelerar();
+            System.out.println(porsche911);
+        }
 
         System.out.println("Agora vamos freiar..." + "\n");
 

@@ -11,13 +11,17 @@ public abstract class Carro {
 
     public String toString() {
         return "Modelo: " + modelo + "\n" +
-                "Velocidade: " + velocidadeAtual + "\n";
+                "Velocidade atual: " + velocidadeAtual + "Km/h\n";
     }
 
     public abstract void acelerar();
 
     public void freiar() {
-        velocidadeAtual -= 10;
+        if (velocidadeAtual >= 10) {
+            velocidadeAtual -= 10;
+        } else {
+            velocidadeAtual = 0;
+        }
     }
 
     public int getVelocidade() {
