@@ -19,7 +19,7 @@ public class Produto {
         return "Nome: " + nome + "\n" +
                 "Preço original: " + preco + "\n" +
                 "Desconto: " + desconto + "\n" +
-                "Preço final: " + precoFormatado + "\n";
+                "Preço com desconto: " + precoFormatado + "\n";
     }
 
     public double getPreco() {
