@@ -1,4 +1,4 @@
-package OperadorBinario;
+package InterfacesFuncionais.OperadorBinario;
 
 import java.util.function.BinaryOperator;
 import java.util.function.BiFunction;
