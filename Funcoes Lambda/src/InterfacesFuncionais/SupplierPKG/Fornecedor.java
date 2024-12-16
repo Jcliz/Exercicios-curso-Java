@@ -1,4 +1,4 @@
-package SupplierPKG;
+package InterfacesFuncionais.SupplierPKG;
 
 import java.util.Arrays;
 import java.util.List;
