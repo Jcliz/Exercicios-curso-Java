@@ -12,7 +12,7 @@ public class ImprimindoObjetos {
             System.out.println(aprovado);
         }
 
-        System.out.println("Usando o Iterator...");
+        System.out.println("\n" + "Usando o Iterator...");
         Iterator<String> it = aprovados.iterator();
 
         //se o iterador tiver um próximo, repetirá a impressão do elemento
