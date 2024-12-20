@@ -10,6 +10,11 @@ public class Aluno {
         this.nota = nota;
     }
 
+    public String toString() {
+        return "Nome: " + nome + "\n" +
+                "Nota: " + nota + "\n";
+    }
+
     public String getNome() {
         return nome;
     }
