@@ -6,6 +6,8 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class FilterEscola {
+    private static List<Aluno> alunos;
+
     public static void main(String[] args) {
         Aluno[] alunosArray = new Aluno[] {
                 new Aluno("João", 9.5),
@@ -13,7 +15,7 @@ public class FilterEscola {
                 new Aluno("Jane", 6),
                 new Aluno("Joe", 5.6)
         };
-        List<Aluno> alunos = Arrays.asList(alunosArray);
+        alunos = Arrays.asList(alunosArray);
 
         Predicate<Aluno> aprovado = aluno -> aluno.getNota() >= 7;
 
@@ -25,5 +27,9 @@ public class FilterEscola {
                 .filter(aprovado)
                 .map(mensagem)
                 .forEach(System.out::println);
+    }
+
+    public static List<Aluno> getAlunos() {
+        return alunos;
     }
 }
