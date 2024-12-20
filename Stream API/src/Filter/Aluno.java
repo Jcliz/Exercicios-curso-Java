@@ -1,5 +1,7 @@
 package Filter;
 
+import java.util.Objects;
+
 public class Aluno {
     private String nome;
     private double nota;
@@ -21,5 +23,17 @@ public class Aluno {
 
     public double getNota() {
         return nota;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Aluno aluno)) return false;
+        return Double.compare(nota, aluno.nota) == 0 && Objects.equals(nome, aluno.nome);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, nota);
     }
 }
