@@ -16,7 +16,7 @@ public class FilterEscola {
         List<Aluno> alunos = Arrays.asList(alunosArray);
 
         Predicate<Aluno> aprovado = aluno -> aluno.getNota() >= 7;
-        
+
         Function<Aluno, String> mensagem =
                 aluno -> "Parabéns " + aluno.getNome() + "! A sua nota foi "
                 + aluno.getNota() + "! Boas férias!";
