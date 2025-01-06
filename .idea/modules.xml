@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/Fundamentos/Fundamentos.iml" filepath="$PROJECT_DIR$/Fundamentos/Fundamentos.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/POO.iml" filepath="$PROJECT_DIR$/POO/POO.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stream API/Stream API.iml" filepath="$PROJECT_DIR$/Stream API/Stream API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tratamento de erros/Tratamento de erros.iml" filepath="$PROJECT_DIR$/Tratamento de erros/Tratamento de erros.iml" />
     </modules>
   </component>
 </project>
