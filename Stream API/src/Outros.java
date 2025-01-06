@@ -17,7 +17,9 @@ public class Outros {
 
         //objetos únicos dentro de uma collection
         System.out.println("Uso de distinct...");
-        alunos.stream().distinct().forEach(System.out::println);
+        alunos.stream()
+                .distinct()
+                .forEach(System.out::println);
 
         System.out.println("\n" + "Uso do skip/limit...");
         alunos.stream()
@@ -26,11 +28,10 @@ public class Outros {
                 .limit(2)
                 .forEach(System.out::println);
 
-        System.out.println("\n" + "Uso do skip/limit...");
+        System.out.println("\n" + "Uso do takeWhile...");
         alunos.stream()
                 .distinct()
-                .skip(1)
-                .limit(2)
+                .takeWhile(a -> a.getNota() >= 7.0)
                 .forEach(System.out::println);
     }
 }
