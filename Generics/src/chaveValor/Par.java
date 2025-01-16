@@ -1,3 +1,5 @@
+package chaveValor;
+
 import java.util.Objects;
 
 public class Par<C, V> {
@@ -14,16 +16,8 @@ public class Par<C, V> {
         return chave;
     }
 
-    public void setChave(C chave) {
-        this.chave = chave;
-    }
-
     public V getValor() {
         return valor;
-    }
-
-    public void setValor(V valor) {
-        this.valor = valor;
     }
 
     @Override
