@@ -1,6 +1,6 @@
 package lambda;
 
-import InterfacesFuncionais.Consumer.Produto;
+import lambda.InterfacesFuncionais.Consumer.Produto;
 
 import java.util.function.BinaryOperator;
 import java.util.function.Function;

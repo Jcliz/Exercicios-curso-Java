@@ -1,6 +1,6 @@
 package streamAPI;
 
-import Filter.Aluno;
+import streamAPI.Filter.Aluno;
 
 import java.util.Arrays;
 import java.util.List;

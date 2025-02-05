@@ -1,6 +1,6 @@
 package generics.heranca;
 
-import comGenerics.Caixa;
+import generics.comGenerics.Caixa;
 
 public class CaixaInt extends Caixa<Integer> {
 }

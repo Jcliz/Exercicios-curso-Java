@@ -1,7 +1,7 @@
 package streamAPI.Reduce;
 
-import Filter.Aluno;
-import Filter.FilterEscola;
+import streamAPI.Filter.Aluno;
+import streamAPI.Filter.FilterEscola;
 
 import java.util.function.BinaryOperator;
 import java.util.function.Function;

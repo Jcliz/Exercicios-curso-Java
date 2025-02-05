@@ -1,6 +1,6 @@
 package tratamento;
 
-import Filter.Aluno;
+import streamAPI.Filter.Aluno;
 
 public class Causa {
     public static void main(String[] args) {

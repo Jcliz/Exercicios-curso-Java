@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Arrays e Collections/Arrays e Collections.iml" filepath="$PROJECT_DIR$/Arrays e Collections/Arrays e Collections.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Classes e Metodos/Classes e Metodos.iml" filepath="$PROJECT_DIR$/Classes e Metodos/Classes e Metodos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Estruturas de controle/Estruturas de controle.iml" filepath="$PROJECT_DIR$/Estruturas de controle/Estruturas de controle.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercicios-curso-Java.iml" filepath="$PROJECT_DIR$/Exercicios-curso-Java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Funcoes Lambda/Funcoes Lambda.iml" filepath="$PROJECT_DIR$/Funcoes Lambda/Funcoes Lambda.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Fundamentos/Fundamentos.iml" filepath="$PROJECT_DIR$/Fundamentos/Fundamentos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Generics/Generics.iml" filepath="$PROJECT_DIR$/Generics/Generics.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JDBC/JDBC.iml" filepath="$PROJECT_DIR$/JDBC/JDBC.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Java Swing/Java Swing.iml" filepath="$PROJECT_DIR$/Java Swing/Java Swing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/POO/POO.iml" filepath="$PROJECT_DIR$/POO/POO.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Padroes/Padroes.iml" filepath="$PROJECT_DIR$/Padroes/Padroes.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Stream API/Stream API.iml" filepath="$PROJECT_DIR$/Stream API/Stream API.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Tratamento de erros/Tratamento de erros.iml" filepath="$PROJECT_DIR$/Tratamento de erros/Tratamento de erros.iml" />
     </modules>
   </component>
 </project>
