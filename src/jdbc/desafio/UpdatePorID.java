@@ -10,40 +10,38 @@ import java.util.Scanner;
 public class UpdatePorID {
     public static void main(String[] args) throws SQLException {
         Scanner leitor = new Scanner(System.in);
+        System.out.println("Informe o código da pessoa: ");
+
+        int id = leitor.nextInt();
+
+        String update = "UPDATE pessoas SET nome = ? WHERE codigo = ?";
+        String select = "SELECT * FROM pessoas WHERE codigo = ?";
 
         Connection conexao = FabricaConexao.getConnection();
-        String sql = "UPDATE pessoas SET nome = ? WHERE codigo = ?";
+        PreparedStatement stmt = conexao.prepareStatement(select);
+        stmt.setInt(1, id);
+        ResultSet resultado = stmt.executeQuery();
 
-        System.out.println("Informe o código da pessoa: ");
-        String id = leitor.nextLine();
+        if (resultado.next()) {
+            Pessoa p = new Pessoa(resultado.getInt(1), resultado.getString(2));
+            System.out.println("O nome atual é " + p.getNome());
+            leitor.nextLine();
 
-        System.out.println("Informe o novo nome da pessoa:");
-        String novoNome = leitor.nextLine();
+            System.out.println("Informe o novo nome: ");
+            String novoNome = leitor.nextLine();
 
-        PreparedStatement stmt = conexao.prepareStatement(sql);
-        stmt.setString(1, novoNome);
-        stmt.setString(2, id);
 
-        ArrayList<Pessoa> pessoas = new ArrayList<>();
+            stmt.close();
+            stmt = conexao.prepareStatement(update);
+            stmt.setString(1, novoNome);
+            stmt.setInt(2, id);
+            stmt.execute();
 
-        if (stmt.execute()) {
-            Statement stmt2 = conexao.createStatement();
-            ResultSet resultado = stmt2.executeQuery("SELECT * FROM pessoas");
-
-            while (resultado.next()) {
-                int codigo = resultado.getInt("codigo");
-                String nome = resultado.getString("nome");
-                pessoas.add(new Pessoa(codigo, nome));
-            }
-
-            for (Pessoa p : pessoas) {
-                System.out.println("Pessoa alterada: " + p.getCodigo() + " -> " + p.getNome());
-            }
+            System.out.println("Pessoa alterada com sucesso!");
         } else {
-            System.out.println("Falha no processo.");
+            System.out.println("Pessoa não encontrada!");
         }
 
-        stmt.close();
         conexao.close();
         leitor.close();
     }
