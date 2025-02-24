@@ -15,3 +15,8 @@ Repositório criado para armazenar os exercícios e práticas realizadas durante
 - JDBC
 - JPA
 
+## Repositórios relacionados:
+- <a href="https://github.com/Jcliz/Campo-Minado">Campo-Minado</a>
+- <a href="https://github.com/Jcliz/Campo-Minado-UI">Campo-Minado UI</a>
+- <a href="https://github.com/Jcliz/Calculadora">Calculadora</a>
+- <a href="https://github.com/Jcliz/Pratica-JPA">Prática-JPA</a>
